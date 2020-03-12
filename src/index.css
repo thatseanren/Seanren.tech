@@ -1,0 +1,294 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+@media (max-width: 587px) {
+  h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #faebd7;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  h3 {
+    font-size: 1.06rem;
+    color: #faebd7;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+  }
+  h5 {
+    font-size: 1.3rem;
+    color: #faebd7;
+    letter-spacing: 0.1rem;
+    font-weight: 550;
+    margin-block-start: 1rem;
+    margin-block-end: 1.4rem;
+  }
+  div.background {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+  }
+  div.background img {
+    width: 100%;
+    height: 100%;
+  }
+  div.background .cover{
+    background: rgba(0, 0, 0, 0.6);
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0px;
+    left:0px;
+    backface-visibility: hidden;
+  }
+  div.h-section {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 11.8%;
+  }
+  div.h-section.shadow{
+    background: rgba(51, 63, 74, 0.8);
+  }
+  div.h-section .menu-btn{
+    z-index: 1;
+  }
+  div.h-section span#name {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-50%);
+    left: 10%;
+    font-size: 5.8666666667vw;
+    color: #faebd7;
+  }
+  div.h-section-navi{
+    position:absolute;
+    top:0;
+    left:0;
+    display: inline-block;
+    height: 100vh;
+    width:100vw;
+    background: #373939;
+    text-align: left;
+    transform: translate(-200%, 0%);
+    transition: all 372.961ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+  }
+  body.show .h-section-navi {
+    transform: translate(0, 0%);
+  }
+  div.h-section-navi ul{
+    color:#faebd7;
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15%;
+    margin-top: 25%;
+  }
+  .h-section-navi ul li a {
+    display: block;
+    font-size: 5.4vw;
+    letter-spacing: 0.3rem;
+    padding: 4% 13.3333333333%;
+    color: antiquewhite !important;
+    cursor: pointer;
+    text-decoration: none;
+    /* line-height: 2; */
+  }
+  #KnowMe a {
+    font-size: 3.7vw;
+  }
+
+  .h-section-navi > h3 {
+    margin: 0 5.4545454545% 0 13.3333%;
+    display: inline-block;
+    font-size: 3.2vw;
+    color: antiquewhite;
+  }
+  .h-section-navi > a {
+    display: inline-block;
+    padding: 0;
+    width: 6.4%;
+    margin: 0 2.4545454545%;
+  }
+  .h-section-navi > a > i {
+    font-size: 7.2vw;
+  }
+  div.keyVisual {
+    height: 100vh;
+    position: relative;
+  }
+  .typed-cursor{
+    color:#faebd7
+  }
+  div.short-description {
+    position: relative;
+    width: 65.2%;
+    height: 37.9%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  div.short-description p {
+    border: 0;
+    outline: 0;
+    font-size: 5.833333vw;
+    line-height: 1.8em;
+    color: #faebd7;
+    display:inline;
+  }
+  a.menu-btn {
+    position: absolute;
+    display: block;
+    top: 24%;
+    left: 80%;
+    padding-top: 10.666667%;
+    width: 11%;
+    height: auto;
+    cursor: pointer;
+  }
+  .lower-right-animation.hide{
+    display: none;
+  }
+  .lower-right-animation {
+    display: inline-block;
+    position: fixed;
+    width: 18.666%;
+    right: 2%;
+    bottom: 0px;
+  }
+  .lower-right-animation a {
+    display: inline-block;
+    cursor: pointer;
+    transform-origin: 100% 0;
+    transform: rotate(90deg);
+  }
+  .lower-right-animation a :after {
+    content: "";
+    position: absolute;
+    background:  #faebd7;;
+    width: 164%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    animation-duration: 2s;
+    animation-name: rightnav;
+    animation-iteration-count: infinite;
+  }
+  .lower-right-animation a p {
+    margin-block-end: 0.55rem;
+    margin-block-start: 0rem;
+    color: #faebd7;
+    font-weight: 550;
+    font-size: 4.466vw;
+  }
+  .lower-left-nav {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #faebd7;
+  }
+  .lower-left-nav ul {
+    list-style: none;
+    margin: 0 6.3333333333% 6.3333333333%;
+    padding: 0;
+  }
+  .lower-left-nav ul li {
+    line-height: 2;
+    display: block;
+    text-align: left;
+  }
+  .lower-left-nav ul li a {
+    display: inline-block;
+    padding: 0.5333333333% 0;
+    text-align: left;
+    cursor: pointer;
+    font-size: 4vw;
+    font-weight: 500;
+    position: relative;
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    color: #faebd7;
+  }
+  .bio-section,
+  .e-section,
+  .w-section,
+  .v-section,
+  .skill-section {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+  }
+  @keyframes rightnav {
+    0% {
+      moz-transform-origin: 100% 50%;
+      -webkit-transform-origin: 100% 50%;
+      transform-origin: 100% 50%;
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+    }
+    49.99% {
+      moz-transform-origin: 100% 50%;
+      -webkit-transform-origin: 100% 50%;
+      transform-origin: 100% 50%;
+      -webkit-transform: scale(0, 1);
+      transform: scale(0, 1);
+    }
+    50% {
+      moz-transform-origin: 0% 50%;
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+    }
+    50.01% {
+      -webkit-transform: scale(0, 1);
+      transform: scale(0, 1);
+      moz-transform-origin: 0% 50%;
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+    }
+    99% {
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1);
+      moz-transform-origin: 0% 50%;
+      -webkit-transform-origin: 0% 50%;
+      transform-origin: 0% 50%;
+    }
+    100% {
+      moz-transform-origin: 100% 50%;
+      -webkit-transform-origin: 100% 50%;
+      transform-origin: 100% 50%;
+    }
+  }
+}
+@media (max-width: 1800px) and (min-width: 587px) {
+  div.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.8;
+  }
+  div.background img {
+    width: 100%;
+    height: 100%;
+  }
+}

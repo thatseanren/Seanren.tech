@@ -1,0 +1,10 @@
+@media (max-width: 587px){
+    h2.section-title{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        display: inline-block;
+        width:80%;
+        margin-right:auto;
+        margin-left:auto;
+    }
+}
